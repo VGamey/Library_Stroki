@@ -1,0 +1,36 @@
+var aStack = [];
+aStack.push(1);
+aStack.push(2);
+
+
+function show(what, newString = "1") {
+  if (newString == 1) document.write(what + "<br/>");
+  if (newString == 2) document.write(what + "<br/><br/>");
+  if (newString == 3) document.write(what + "<br/><br/><br/>");
+}
+
+
+function stack (input = 0, action = "push"){
+  var result="";
+  switch (action){
+  	case("push"):
+    	aStack.push(input);
+      show("Добавили в стек число" + input);
+     	break;
+    case("pop"):
+     	//if (aStack.length == 0) show("Массив пуст");
+      //else	result = aStack.pop();
+      result = aStack.pop();
+      show(result);
+      break;  
+    default: show("Массив пока пуст");
+  }
+  return result;
+}
+
+//main
+
+stack(4, "push");
+stack(6,"push");
+show("Здорово");
+show(aStack);
