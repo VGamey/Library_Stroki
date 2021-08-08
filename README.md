@@ -1,2 +1,2 @@
-# php-blog
-Simple PHP OOP blog based on mvc
+# php-mvc-library
+Test task for my work in company Stroki
